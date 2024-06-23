@@ -1,0 +1,117 @@
+body {
+  font-family: futura-pt, Tahoma, Geneva, Verdana, Arial, sans-serif;
+  color: white;
+}
+.navbar #navContainer {
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+}
+.navbar {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-shadow: none;
+}
+.navbar.navbar-expand-lg {
+  border: none;
+  box-shadow: none;
+}
+.navbar-nav {
+  align-items: center;
+}
+.navbar-brand {
+  margin: 0;
+  margin-right: 10px;
+}
+#logo {
+  color: white;
+}
+.nav-link {
+  color: white;
+}
+#primary-nav {
+  padding: 10px;
+  background-color: #2d2d2d;
+}
+#primary-nav .nav-item {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+#sub-nav {
+  background-color: #525050;
+  padding: 0;
+}
+#sale .nav-link {
+  margin: 0;
+  padding: 0;
+  height: 50px;
+}
+#promocode {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  padding: 2px;
+}
+input[type="search"] {
+  width: 500px;
+}
+i:hover {
+  color: white;
+}
+#highlight {
+  background-color: #ff385c;
+  display: block;
+  font-weight: 800;
+  padding: 10px 12px 10px 14px;
+  transform: skew(-12deg);
+  height: 100%;
+  text-align: center;
+  padding-top: 12px;
+}
+
+#nav-dropdown-container {
+  background-color: #eeeeee;
+  color: black;
+  display: none;
+  padding: 40px 10%;
+  justify-content: space-evenly;
+  height: 500px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+#nav-dropdown-container h6 {
+  font-size: 16px;
+  font-weight: 600;
+}
+#nav-dropdown-container ul {
+  padding: 0;
+}
+#nav-dropdown-container ul li {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 550;
+  color: grey;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+#nav-dropdown-container ul li:hover {
+  color: black;
+}
+#categories-nav {
+  position: relative;
+}
+.breadcrumb {
+  margin: 16px;
+}
+.breadcrumb-item a {
+  text-decoration: none;
+  color: black;
+}
+hr {
+  height: 1px;
+  color: black;
+}

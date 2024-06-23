@@ -1,0 +1,167 @@
+#promocode {
+  background-color: #ff385c;
+}
+
+#title {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 60px;
+  font-style: italic;
+  color: black;
+  text-align: center;
+}
+.container-fluid {
+  display: flex;
+  align-items: flex-start;
+}
+
+main {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#filters-section {
+  margin-right: 20px;
+  color: black;
+  width: 300px;
+  border-right: 0.5px solid lightgrey;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 40px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.filters {
+  border-right: 0.5px solid lightgrey;
+  border-top: 0.5px solid lightgrey;
+  padding: 16px;
+}
+.filters:last-of-type {
+  border-bottom: 0.5px solid lightgrey;
+}
+#content-section {
+  color: black;
+
+  overflow: auto;
+  height: 50%;
+}
+#content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+  height: 100%;
+}
+.item img {
+  width: 100%;
+}
+.moreBtn {
+  background: none;
+  color: #ff385c;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.mutedText {
+  color: gray;
+}
+.itemName {
+  margin-top: 10px;
+  font-weight: bolder;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.itemDescription {
+  color: gray;
+}
+.price {
+  margin-top: 10px;
+  font-weight: bolder;
+  font-size: 16px;
+  color: #ff385c;
+}
+#more-filters {
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+}
+#more-filters .dropdown button {
+  background-color: white;
+  color: black;
+  font-weight: 100;
+  font-size: 16px;
+  border-color: black;
+}
+#more-filters .dropdown button b {
+  font-weight: 600;
+}
+#more-filters .dropdown .dropdown-menu {
+  width: 100%;
+}
+#more-filters .dropdown .dropdown-item {
+  font-weight: 100;
+  font-size: 14px;
+}
+.more-filter-btn {
+  border: 0;
+  color: black;
+  font-weight: 100;
+  font-size: 14px;
+  border-radius: 100px;
+  margin-right: 16px;
+}
+.more-filter-btn i {
+  color: gray;
+}
+button.more-filter-btn:hover {
+  background-color: whitesmoke;
+}
+#more-filter-btn-group {
+  display: flex;
+}
+#drop-menu {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: none;
+  font-weight: 100;
+  font-size: 14px;
+}
+#drop-menu div {
+  margin-right: 40px;
+}
+#applied-filters {
+  display: flex;
+  padding: 16px;
+  margin-bottom: 10px;
+}
+
+#applied-filters .btn-outline-secondary {
+  border-radius: 100px;
+  width: 100px;
+  margin-right: 10px;
+}
+#more-filter-btn-group .moreBtn {
+  background: none;
+  color: black;
+  border: none;
+  padding: 0;
+  font-weight: 100;
+  font-size: 14px;
+  cursor: pointer;
+  outline: inherit;
+}
+#mutedFoundText {
+  color: gray;
+  font-weight: 100;
+  font-size: 14px;
+  text-align: center;
+}
+h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+h4 {
+  font-weight: 600;
+  font-size: 14px;
+}

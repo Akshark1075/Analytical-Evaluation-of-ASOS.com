@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ASOS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="./css/index.css" rel="stylesheet" />
+    <link href="./css/searchResultsPage.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" id="primary-nav">
+      <div class="container-fluid" id="navContainer">
+        <a class="navbar-brand" href="#"
+          ><img src="../assets/images/ASOS-logo.png" width="80px" id="logo"
+        /></a>
+
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search for anything"
+            aria-label="Search"
+          />
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+
+        <div id="navLinks">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-regular fa-user"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-heart"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="../assets/../assets/images/threeDots.svg" />
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Notification</a></li>
+                <li><a class="dropdown-item" href="#">Help & Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="categories-nav">
+      <nav class="navbar navbar-expand-lg" id="sub-nav">
+        <div class="container-fluid" id="navContainer">
+          <div id="navLinks">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" id="sale">
+                <a class="nav-link" aria-current="page" href="#"
+                  ><span id="highlight">Sale</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">New & Featured</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kids</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sale</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="nav-dropdown-container">
+        <div>
+          <h6>Featured</h6>
+          <ul>
+            <li>Topman</li>
+            <li>Clothing</li>
+            <li>Shoes</li>
+            <li>Accessories</li>
+            <li>Sportwear</li>
+            <li>Face + Body</li>
+            <li>Selling Fast</li>
+            <li>New in: Today</li>
+            <li>New in: Selling Fast</li>
+          </ul>
+        </div>
+        <div>
+          <h6>Clothing</h6>
+          <ul>
+            <li>Hoodies & Sweatshirts</li>
+            <li>Shirts</li>
+            <li>Trousers & Chinos</li>
+            <li>Jeans</li>
+            <li>Jumpers & Cardigans</li>
+            <li>T-Shirts & Vests</li>
+            <li>Suits & Tailoring</li>
+          </ul>
+        </div>
+        <div>
+          <h6>Shoes</h6>
+          <ul>
+            <li>Sneakers</li>
+            <li>Trainers</li>
+            <li>Sandals</li>
+            <li>Boots</li>
+            <li>Loafers</li>
+            <li>Slider</li>
+            <li>Socks</li>
+            <li>Running Trainers</li>
+            <li>Slippers</li>
+          </ul>
+        </div>
+        <div>
+          <h6>Accessories</h6>
+          <ul>
+            <li>Caps Hats</li>
+            <li>Beanies</li>
+            <li>Sunglasses</li>
+            <li>Watches</li>
+            <li>Ties</li>
+            <li>Belts</li>
+            <li>Gifts</li>
+            <li>Bracelets</li>
+            <li>Wallet</li>
+            <li>Backpacks</li>
+          </ul>
+        </div>
+        <div>
+          <h6>Sportswear</h6>
+          <ul>
+            <li>Gym</li>
+            <li>Running</li>
+            <li>Swimwear</li>
+            <li>Football</li>
+            <li>Ski & Snowboard</li>
+            <li>Cycling</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="promocode">
+      <span>New Here? Get 10% off almost everything!*</span><br /><span
+        >With code: TEAMASOS</span
+      >
+    </div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Men</a></li>
+        <li class="breadcrumb-item"><a href="#">Sale</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Hoodies & Sweatshirts
+        </li>
+      </ol>
+    </nav>
+    <hr />
+    <main>
+      <h1 id="title">Men's Sale: Hoodies &amp; Sweatshirts</h1>
+      <h6 id="mutedFoundText">120 styles found</h6>
+      <div class="container-fluid">
+        <div id="filters-section">
+          <h3>FILTERS</h3>
+
+          <div class="filters">
+            <h4>BRAND</h4>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label"> Allen Solly </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label"> Peter England </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label"> Tommy Hilfiger </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label"> H & M </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label"> Nike </label>
+            </div>
+            <button class="moreBtn">
+              <i class="fa-solid fa-plus" style="color: #ff385c"></i> 454 more
+            </button>
+          </div>
+
+          <div class="filters">
+            <h4>PRICE</h4>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label">
+                € 10 - € 50 <span class="mutedText">(25221)</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label">
+                € 50 - € 100 <span class="mutedText">(2521)</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label">
+                € 100 - € 150 <span class="mutedText">(728)</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label">
+                € 150 - € 200 <span class="mutedText">(387)</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label">
+                € 200 - € 250 <span class="mutedText">(28)</span>
+              </label>
+            </div>
+          </div>
+          <div class="filters">
+            <h4>COLOR</h4>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label">
+                ⚫️ Black <span class="mutedText">(25221)</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label"
+                >🔵 Blue <span class="mutedText">(2521)</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label">
+                🔴 Red <span class="mutedText">(728)</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label"
+                >🟠 Orange <span class="mutedText">(387)</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label">
+                ⚪️ White <span class="mutedText">(869)</span>
+              </label>
+            </div>
+            <button class="moreBtn">
+              <i class="fa-solid fa-plus" style="color: #ff385c"></i> 454 more
+            </button>
+          </div>
+          <div class="filters">
+            <h4>CUSTOMER RATING</h4>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label"> 4 🌟 & Above </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label"> 3 🌟 & Above </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label"> 2 🌟 & Above </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" />
+              <label class="form-check-label"> 1 🌟 & Above </label>
+            </div>
+          </div>
+          <div class="filters">
+            <h4>DISCOUNT RANGE</h4>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                10% & Above
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault2"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                20% & Above
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault3"
+              />
+              <label class="form-check-label" for="flexRadioDefault3">
+                30% & Above
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault4"
+              />
+              <label class="form-check-label" for="flexRadioDefault4">
+                40% & Above
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div id="content-section">
+          <div id="more-filters">
+            <div>
+              <div>
+                <div id="more-filter-btn-group">
+                  <button
+                    class="btn more-filter-btn"
+                    type="button"
+                    onclick="toggleDisplay(event)"
+                  >
+                    Bundles
+                    <i class="fa-solid fa-angle-down"></i>
+                  </button>
+                  <button
+                    class="btn more-filter-btn"
+                    type="button"
+                    onclick="toggleDisplay(event)"
+                  >
+                    Closure
+                    <i class="fa-solid fa-angle-down"></i>
+                  </button>
+                  <button
+                    class="btn more-filter-btn"
+                    type="button"
+                    onclick="toggleDisplay(event)"
+                  >
+                    Country of Origin
+                    <i class="fa-solid fa-angle-down"></i>
+                  </button>
+                  <button
+                    class="btn more-filter-btn"
+                    type="button"
+                    onclick="toggleDisplay(event)"
+                  >
+                    Fabric
+                    <i class="fa-solid fa-angle-down"></i>
+                  </button>
+                  <button
+                    class="btn more-filter-btn"
+                    type="button"
+                    onclick="toggleDisplay(event)"
+                  >
+                    Hood
+                    <i class="fa-solid fa-angle-down"></i>
+                  </button>
+                  <button
+                    class="btn more-filter-btn"
+                    type="button"
+                    onclick="toggleDisplay(event)"
+                  >
+                    Size
+                    <i class="fa-solid fa-angle-down"></i>
+                  </button>
+                  <button class="moreBtn">
+                    <i class="fa-solid fa-plus"></i> 13 more
+                  </button>
+                </div>
+                <div
+                  class="form-check drop-menu"
+                  aria-labelledby="dropdownMenuButton1"
+                  id="drop-menu"
+                >
+                  <div>
+                    <input class="form-check-input" type="checkbox" value="" />
+                    <label class="form-check-label"> Some Filter</label>
+                  </div>
+                  <div>
+                    <input class="form-check-input" type="checkbox" value="" />
+                    <label class="form-check-label"> Some Filter</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="dropdownMenu2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Sort by: <b>Recommended</b>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li>
+                  <button class="dropdown-item" type="button">
+                    What's New
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="button">
+                    Popularity
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="button">
+                    Customer Rating
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="button">
+                    Price: High to Low
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="button">
+                    Price: Low to High
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="applied-filters">
+            <div class="applied-filter">
+              <button class="btn btn-outline-secondary">
+                Adidas
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </div>
+            <div class="applied-filter">
+              <button class="btn btn-outline-secondary">
+                Reebok
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </div>
+            <div class="applied-filter">
+              <button class="btn btn-outline-secondary">
+                Arrow
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </div>
+          </div>
+          <div id="content">
+            <div class="item">
+              <a href="./checkoutPage.html">
+                <img src="../assets/images/sweatshirt1.jpeg" alt="" />
+              </a>
+              <p class="itemName">Bershka</p>
+              <p class="itemDescription">Beige Coloured Hooded Sweatshirt</p>
+              <p class="price">€ 250</p>
+            </div>
+            <div class="item">
+              <a href="./checkoutPage.html">
+                <img src="../assets/images/sweatshirt2.png" alt="" />
+              </a>
+              <p class="itemName">Adidas</p>
+              <p class="itemDescription">White Coloured Hooded Sweatshirt</p>
+              <p class="price">€ 250</p>
+            </div>
+            <div class="item">
+              <a href="./checkoutPage.html">
+                <img src="../assets/images/sweatshirt3.png" alt=""
+              /></a>
+              <p class="itemName">Bershka</p>
+              <p class="itemDescription">Beige Coloured Hooded Sweatshirt</p>
+              <p class="price">€ 250</p>
+            </div>
+            <div class="item">
+              <a href="./checkoutPage.html">
+                <img src="../assets/images/sweatshirt4.png" alt=""
+              /></a>
+              <p class="itemName">Nike</p>
+              <p class="itemDescription">Black Coloured Hooded Sweatshirt</p>
+              <p class="price">€ 250</p>
+            </div>
+            <div class="item">
+              <a href="./checkoutPage.html">
+                <img src="../assets/images/sweatshirt3.png" alt=""
+              /></a>
+              <p class="itemName">Bershka</p>
+              <p class="itemDescription">Beige Coloured Hooded Sweatshirt</p>
+              <p class="price">€ 250</p>
+            </div>
+            <div class="item">
+              <a href="./checkoutPage.html">
+                <img src="../assets/images/sweatshirt4.png" alt=""
+              /></a>
+              <p class="itemName">Nike</p>
+              <p class="itemDescription">Black Coloured Hooded Sweatshirt</p>
+              <p class="price">€ 250</p>
+            </div>
+            <div class="item">
+              <a href="./checkoutPage.html">
+                <img src="../assets/images/sweatshirt6.png" alt=""
+              /></a>
+              <p class="itemName">Bershka</p>
+              <p class="itemDescription">Beige Coloured Hooded Sweatshirt</p>
+              <p class="price">€ 250</p>
+            </div>
+            <div class="item">
+              <a href="./checkoutPage.html">
+                <img src="../assets/images/sweatshirt2.png" alt=""
+              /></a>
+              <p class="itemName">Adidas</p>
+              <p class="itemDescription">White Coloured Hooded Sweatshirt</p>
+              <p class="price">€ 250</p>
+            </div>
+            <div class="item">
+              <a href="./checkoutPage.html">
+                <img src="../assets/images/sweatshirt1.jpeg" alt=""
+              /></a>
+              <p class="itemName">Nike</p>
+              <p class="itemDescription">Black Coloured Hooded Sweatshirt</p>
+              <p class="price">€ 250</p>
+            </div>
+            <div class="item">
+              <a href="./checkoutPage.html">
+                <img src="../assets/images/sweatshirt4.png" alt=""
+              /></a>
+              <p class="itemName">Bershka</p>
+              <p class="itemDescription">Beige Coloured Hooded Sweatshirt</p>
+              <p class="price">€ 250</p>
+            </div>
+            <div class="item">
+              <a href="./checkoutPage.html">
+                <img src="../assets/images/sweatshirt5.png" alt=""
+              /></a>
+              <p class="itemName">Nike</p>
+              <p class="itemDescription">Black Coloured Hooded Sweatshirt</p>
+              <p class="price">€ 250</p>
+            </div>
+            <div class="item">
+              <a href="./checkoutPage.html">
+                <img src="../assets/images/sweatshirt2.png" alt=""
+              /></a>
+              <p class="itemName">Bershka</p>
+              <p class="itemDescription">Beige Coloured Hooded Sweatshirt</p>
+              <p class="price">€ 250</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a264135edd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ASOS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="./css/index.css" rel="stylesheet" />
+    <link href="./css/checkoutPage.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" id="primary-nav">
+      <div class="container-fluid" id="navContainer">
+        <a class="navbar-brand" href="#"
+          ><img src="../assets/images/ASOS-logo.png" width="80px" id="logo"
+        /></a>
+
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search for anything"
+            aria-label="Search"
+          />
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+
+        <div id="navLinks">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-regular fa-user"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-heart"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="../assets/../assets/images/threeDots.svg" />
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Notification</a></li>
+                <li><a class="dropdown-item" href="#">Help & Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="categories-nav">
+      <nav class="navbar navbar-expand-lg" id="sub-nav">
+        <div class="container-fluid" id="navContainer">
+          <div id="navLinks">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" id="sale">
+                <a class="nav-link" aria-current="page" href="#"
+                  ><span id="highlight">Sale</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">New & Featured</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kids</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sale</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="nav-dropdown-container">
+        <div>
+          <h6>Featured</h6>
+          <ul>
+            <li>Topman</li>
+            <li>Clothing</li>
+            <li>Shoes</li>
+            <li>Accessories</li>
+            <li>Sportwear</li>
+            <li>Face + Body</li>
+            <li>Selling Fast</li>
+            <li>New in: Today</li>
+            <li>New in: Selling Fast</li>
+          </ul>
+        </div>
+        <div>
+          <h6>Clothing</h6>
+          <ul>
+            <li>Hoodies & Sweatshirts</li>
+            <li>Shirts</li>
+            <li>Trousers & Chinos</li>
+            <li>Jeans</li>
+            <li>Jumpers & Cardigans</li>
+            <li>T-Shirts & Vests</li>
+            <li>Suits & Tailoring</li>
+          </ul>
+        </div>
+        <div>
+          <h6>Shoes</h6>
+          <ul>
+            <li>Sneakers</li>
+            <li>Trainers</li>
+            <li>Sandals</li>
+            <li>Boots</li>
+            <li>Loafers</li>
+            <li>Slider</li>
+            <li>Socks</li>
+            <li>Running Trainers</li>
+            <li>Slippers</li>
+          </ul>
+        </div>
+        <div>
+          <h6>Accessories</h6>
+          <ul>
+            <li>Caps Hats</li>
+            <li>Beanies</li>
+            <li>Sunglasses</li>
+            <li>Watches</li>
+            <li>Ties</li>
+            <li>Belts</li>
+            <li>Gifts</li>
+            <li>Bracelets</li>
+            <li>Wallet</li>
+            <li>Backpacks</li>
+          </ul>
+        </div>
+        <div>
+          <h6>Sportswear</h6>
+          <ul>
+            <li>Gym</li>
+            <li>Running</li>
+            <li>Swimwear</li>
+            <li>Football</li>
+            <li>Ski & Snowboard</li>
+            <li>Cycling</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="promocode">
+      <span>New Here? Get 10% off almost everything!*</span><br /><span
+        >With code: TEAMASOS</span
+      >
+    </div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Men</a></li>
+        <li class="breadcrumb-item"><a href="#">Sale</a></li>
+        <li class="breadcrumb-item"><a href="#">Hoodies & Sweatshirts</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Men Beige Coloured Hooded Sweatshirt
+        </li>
+      </ol>
+    </nav>
+    <hr />
+
+    <main>
+      <div id="content">
+        <div id="thumbnail">
+          <img
+            src="../assets/images/sweatshirt1.jpeg"
+            class="d-block"
+            alt="..."
+          />
+          <img
+            src="../assets/images/sweatshirt3.png"
+            class="d-block"
+            alt="..."
+          />
+          <img
+            src="../assets/images/sweatshirt5.png"
+            class="d-block"
+            alt="..."
+          />
+          <img
+            src="../assets/images/sweatshirt6.png"
+            class="d-block"
+            alt="..."
+          />
+        </div>
+        <div>
+          <div
+            id="carouselControls"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../assets/images/sweatshirt1.jpeg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/sweatshirt1.jpeg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/sweatshirt1.jpeg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div id="product-info-section">
+            <div class="info-item">
+              <span>Product Details</span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="info-item">
+              <span>Brand</span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="info-item">
+              <span>Size & Fit</span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="info-item">
+              <span>Look After Me</span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="info-item">
+              <span>About Me</span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+        </div>
+        <div id="details-section">
+          <h3 id="title">Bershka</h3>
+          <h4 id="subtitle">Men Beige Coloured Hooded Sweatshirt</h4>
+          <button class="btn btn-outline-secondary">
+            <span>4.1🌟</span><span> | </span><span>98 Ratings</span>
+          </button>
+          <hr />
+          <p class="price">NOW € 250</p>
+          <p style="color: green">inclusive of all taxes</p>
+          <h6>
+            SELECT SIZE &nbsp&nbsp&nbsp
+            <span>
+              SIZE CHART
+              <i class="fa-solid fa-chevron-right"></i
+            ></span>
+          </h6>
+          <div id="sizes">
+            <button class="btn btn-outline-secondary">38</button>
+            <button class="btn btn-outline-secondary">40</button>
+            <button class="btn btn-outline-secondary">42</button>
+            <button class="btn btn-outline-secondary">44</button>
+          </div>
+          <div id="cartOptions">
+            <button class="btn" id="addToCart">Add to Bag</button>
+            <button id="addToWishlist">
+              <i class="fa-solid fa-heart" style="color: red"></i>
+            </button>
+          </div>
+          <hr />
+          <h6>Delivery Options</h6>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="EIR Code"
+              aria-label="EIR Code"
+            />
+            <span class="input-group-text" style="color: #ff385c">Check</span>
+          </div>
+          <p id="infoText">
+            Please enter EIR code to check delivery time & Pay on Delivery
+            Availability
+          </p>
+          <div id="returnInfo">
+            <p>
+              <i class="fa-solid fa-truck"></i>Free delivery on qualifying
+              orders.
+            </p>
+            <p>
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>Free Returns
+            </p>
+            <p><a href="#">View our Delivery & Returns Policy </a></p>
+          </div>
+          <div id="offers">
+            <h6>BEST OFFERS</h6>
+            <p>NEW HERE? Get 10% off almost everything</p>
+            <p>Coupon code: TEAMASOS</p>
+            <button class="btn pinkBtn">View Details</button>
+            <p>
+              Split your purchase into 3 payments of € 61.23(0% APR. Klarna.
+              18+, T&Cs apply, Credit subject to status(0% APR))
+            </p>
+            <button class="btn pinkBtn">View Details</button>
+          </div>
+          <div id="ratings-section">
+            <h6>CUSTOMER RATINGS</h6>
+            <div id="rating-display">
+              <div>
+                <p id="ratingHighlight">4 🌟</p>
+                <p>3K Verified Buyers</p>
+              </div>
+              <div id="ratings">
+                <div class="rating">
+                  <div class="rating-value">
+                    <span>5 ★</span>
+                    <span>2637</span>
+                  </div>
+                  <input type="range" disabled />
+                </div>
+                <div class="rating">
+                  <div class="rating-value">
+                    <span>4 ★</span>
+                    <span>2637</span>
+                  </div>
+                  <input type="range" disabled />
+                </div>
+                <div class="rating">
+                  <div class="rating-value">
+                    <span>3 ★</span>
+                    <span>124</span>
+                  </div>
+                  <input type="range" disabled />
+                </div>
+                <div class="rating">
+                  <div class="rating-value">
+                    <span>2 ★</span>
+                    <span>234</span>
+                  </div>
+                  <input type="range" disabled />
+                </div>
+                <div class="rating">
+                  <div class="rating-value">
+                    <span>1 ★</span>
+                    <span>377</span>
+                  </div>
+                  <input type="range" disabled />
+                </div>
+              </div>
+            </div>
+            <div id="customerReviews">
+              <h6>WHAT CUSTOMERS SAID</h6>
+              <label for="customRange1" class="form-label">Fit</label>
+              <input type="range" disabled />
+              <label for="customRange1" class="form-label">Length</label>
+              <input type="range" disabled />
+              <label for="customRange1" class="form-label">Thickness</label>
+              <input type="range" disabled />
+              <button class="btn pinkBtn">View all 253 reviews</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a264135edd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+      const content = document.querySelector("#content-section");
+      if (content) {
+        content.style.height = `${1000}px`;
+      }
+    </script>
+  </body>
+</html>
